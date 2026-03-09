@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Perpus Gamelab</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2>Perpus Gamelab</h2>
+        <hr />
+        <ul>
+          <li class="active">
+            <a href="index.html">
+              <img src="image/beranda.png" alt="Beranda" class="sidebar-icon" />
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="daftar-buku.html">
+              <img src="image/buku.png" alt="Daftar Buku" class="sidebar-icon" />
+              Daftar Buku
+            </a>
+          </li>
+          <li>
+            <a href="peminjaman.html">
+              <img
+                src="image/daftar_pinjam.png"
+                alt="Peminjaman"
+                class="sidebar-icon"
+              />
+              Peminjaman
+            </a>
+          </li>
+          <li>
+            <a href="anggota.html">
+              <img src="image/anggota.png" alt="Anggota" class="sidebar-icon" />
+              Anggota
+            </a>
+          </li>
+        </ul>
+      </div>
+     <div class="content">
+  <header>
+    <h1>Data Anggota</h1>
+  </header>
+  <main>
+    <div class="add-member-form">
+      <h2>Tambah Anggota Baru</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tanggal-bergabung">Tanggal Bergabung:</label>
+        <input
+          type="date"
+          id="tanggalBergabung"
+          name="tanggalBergabung"
+          required
+        />
+
+        <button type="submit" id="addMember-button" class="btn btn-add">
+          Tambah
+        </button>
+      </form>
+    </div>
+    <table class="member-list">
+      <tr>
+        <th>No.</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Tanggal Bergabung</th>
+        <th>Aksi</th>
+      </tr>
+    </table>
+  </main>
+</div>
+    </div>
+<script src="anggota.js"></script>
+  </body>
+</html>

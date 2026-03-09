@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Perpus Gamelab</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2>Perpus Gamelab</h2>
+        <hr />
+        <ul>
+          <li class="active">
+            <a href="index.html">
+              <img src="image/beranda.png" alt="Beranda" class="sidebar-icon" />
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="daftar-buku.html">
+              <img src="image/buku.png" alt="Daftar Buku" class="sidebar-icon" />
+              Daftar Buku
+            </a>
+          </li>
+          <li>
+            <a href="peminjaman.html">
+              <img
+                src="image/daftar_pinjam.png"
+                alt="Peminjaman"
+                class="sidebar-icon"
+              />
+              Peminjaman
+            </a>
+          </li>
+          <li>
+            <a href="anggota.html">
+              <img src="image/anggota.png" alt="Anggota" class="sidebar-icon" />
+              Anggota
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+      <div class="content">
+  <header>
+    <h1>Peminjaman Buku</h1>
+  </header>
+  <main>
+    <div class="add-loan-form">
+      <h2>Tambah Peminjaman Buku</h2>
+      <form>
+        <label for="nama-peminjam">Nama Peminjam:</label>
+        <input type="text" id="namaPeminjam" name="namaPeminjam" required />
+
+        <label for="judul-buku">Judul Buku:</label>
+        <input type="text" id="judulBuku" name="judulBuku" required />
+
+        <label for="tanggal-peminjaman">Tanggal Peminjaman:</label>
+        <input
+          type="date"
+          id="tanggalPeminjaman"
+          name="tanggalPeminjaman"
+          required
+        />
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="Pinjam">Pinjam</option>
+          <option value="Kembali">Kembali</option>
+        </select>
+
+        <button type="submit" id="addLoan-button" class="btn btn-add">
+          Tambah
+        </button>
+      </form>
+    </div>
+    <table class="loan-list">
+      <tr>
+        <th>No.</th>
+        <th>Nama Peminjam</th>
+        <th>Judul Buku</th>
+        <th>Tanggal Peminjaman</th>
+        <th>Status</th>
+        <th>Aksi</th>
+      </tr>
+    </table>
+  </main>
+</div>
+      </div>
+    </div>
+    <script src="peminjaman.js"></script>
+  </body>
+</html>

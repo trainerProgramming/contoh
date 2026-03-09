@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.dashboard {
+  display: flex;
+}
+
+/* Memberikan style untuk sidebar icons */
+.sidebar-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Memberikan style untuk sidebar*/
+.sidebar {
+  background-color: #007aff;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.sidebar li a:hover {
+  color: #ff9900;
+}
+
+/* Memberikan style untuk konten */
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content header {
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  font-size: 28px;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+/* Memberikan style untuk section card */
+.overview {
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/*  Memberikan style untuk aktifitas terbaru */
+.recent-activity {
+  margin-bottom: 40px;
+}
+
+.recent-activity ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recent-activity li {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Memberi style untuk daftar Buku */
+.book-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.book-list th,
+.book-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-list th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Mmeberi style form daftar buku */
+.add-book-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-book-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-book-form form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-book-form label {
+  font-weight: bold;
+}
+
+.add-book-form input[type="text"],
+.add-book-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.add-book-form button {
+  margin-top: 10px;
+}
+
+/* memberi style button */
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-add {
+  background-color: #4caf50;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-edit {
+  background-color: #2196f3;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* memberi style untuk form peminjaman */
+.add-loan-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-loan-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-loan-form form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-loan-form label {
+  font-weight: bold;
+}
+
+.add-loan-form input[type="text"],
+.add-loan-form input[type="date"],
+.add-loan-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.add-loan-form button {
+  margin-top: 10px;
+}
+
+/* memberi style untuk tabel peminjaman */
+.loan-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.loan-list th,
+.loan-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.loan-list th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* memberi style pada form halaman anggota */
+.add-member-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-member-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-member-form form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-member-form label {
+  font-weight: bold;
+}
+
+.add-member-form input[type="text"],
+.add-member-form input[type="email"],
+.add-member-form input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.add-member-form button {
+  margin-top: 10px;
+}
+
+/* Memberi style pada tabel anggota */
+.member-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.member-list th,
+.member-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-list th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
